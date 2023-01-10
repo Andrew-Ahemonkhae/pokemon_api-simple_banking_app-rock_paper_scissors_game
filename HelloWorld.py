@@ -1,9 +1,8 @@
-with open("email.txt", "r") as emails:
-    emails = emails.readlines()
-
-print(emails)
-for email in emails:
-    if "gmail" in email:
-        print(email.rstrip())    
-    
-    
+name = input("What is your name? ")
+def printname(name):
+    print("My name is ", name)
+    def printname2():
+        print("My name is Ahemonkhae", name )
+     
+    printname2()
+printname(name)        
