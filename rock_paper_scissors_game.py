@@ -6,12 +6,6 @@ while num <= 30:
     user_choice = input("What is your choice? ")
     if user_choice == computer_choice:
         print("Hey we got the same thing let's try again")
-    elif user_choice == "rock" and computer_choice == "paper":
-        print(f"Aww! You lost the game. I chose {computer_choice}")
-    elif user_choice == "paper" and computer_choice == "scissors":
-        print(f"Aww! You lost the game. I chose {computer_choice}")
-    elif user_choice == "scissors" and computer_choice == "rock":
-        print(f"Aww! You lost the game. I chose {computer_choice}")
     elif user_choice == "rock" and computer_choice == "scissors":
         print(f"Hey you won the game! I chose {computer_choice}")
         break
@@ -21,8 +15,10 @@ while num <= 30:
     elif user_choice == "scissors" and computer_choice == "paper":
         print(f"Hey you won the game! I chose {computer_choice}")
         break               
+    elif user_choice == " ":
+        print("Please enter a valid option!")
     else:
-        print("Please enter a valid option!")    
+        print(f"Aww! You lost the game. I chose {computer_choice}")        
         num = num + 1
         
     
